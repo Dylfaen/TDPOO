@@ -1,0 +1,4 @@
+1 - #define ne réserve pas de mémoire, cette instruction ne fait que remplacer toutes les occurences de 'MAX1' par 100 dans le code. MAX1 n'est donc pas une varaible et n'a pas d'adresse.
+    static const int crée une variable globale constante. Elle réserve de la place dans la mémoire et on peut donc accéder à son adresse.
+
+    Donc on peut accéder à l'adresse de MAX2 mais pas à l'adresse de MAX1 puisque ce dernier n'est pas une variable.

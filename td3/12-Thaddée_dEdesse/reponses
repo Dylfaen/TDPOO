@@ -1,0 +1,2 @@
+1 - friend sur une fonction signifie que cette fonction à accès à tous les membres private et protected de la classe dans laquelle la fonction est déclarée comme friend
+    friend sur une classe signifie qu'elle a accès à tous les membres private et protected de la classe "hôte".

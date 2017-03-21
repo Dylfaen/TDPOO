@@ -1,0 +1,15 @@
+1 - n est passé par référence, donc si on ne précise pas que n est constant, on pourrait le changer dans la fonction et donc changer la valeur de la variable passée en paramètre en dehors de la fonction. const empèche cela.
+2 -
+
+cesar@jarvis:~/Documents/school/Université/td/poo/td3/5-Pierre_Simon$ g++ *.cpp
+main.cpp:2:21: fatal error: Pesonne.h: No such file or directory
+compilation terminated.
+Personne.cpp:39:18: error: non-member function ‘void affiche()’ cannot have cv-qualifier
+   void affiche() const {
+                  ^
+Personne.cpp: In function ‘void affiche()’:
+Personne.cpp:40:5: error: invalid use of ‘this’ in non-member function
+     this->age = 0;
+     ^
+
+const appliqué à une fonction membre l'empèche de modifier un attribut de l'instance.

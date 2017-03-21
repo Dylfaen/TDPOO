@@ -1,0 +1,45 @@
+1 - A première vue ces trois ecritures fournissent le même résultat. Les deux dernières seront cependant constante (non-modifiable).
+De plus, les 3 variables sont côte-à-côte dans la mémoire (à 32 bits d'écart soit la taille d'un entier).
+
+cesar@jarvis:~/Documents/school/Université/td/poo/td3/6-Jean$ ./a.out
+0xed9c20
+0xed9c40
+0xed9c60
+
+2 - Résultat de l'allocation et de la désallocation des 10 pointeurs
+
+cesar@jarvis:~/Documents/school/Université/td/poo/td3/6-Jean$ ./a.out
+0xef0c20
+0xef0c40
+0xef0c60
+--------
+0xef1090 : 1
+0xef10b0 : 2
+0xef10d0 : 3
+0xef10f0 : 4
+0xef1110 : 5
+0xef1130 : 6
+0xef1150 : 7
+0xef1170 : 8
+0xef1190 : 9
+0xef11b0 : 10
+--------
+désallocation
+--------
+0xef1090 : 0
+0xef10b0 : 15667328
+0xef10d0 : 15667360
+0xef10f0 : 15667392
+0xef1110 : 15667424
+0xef1130 : 15667456
+0xef1150 : 15667488
+0xef1170 : 15667520
+0xef1190 : 15667552
+0xef11b0 : 15667584
+
+
+
+On remarque que les pointeurs pointent vers les mêmes adresses, mais leurs valeurs ont été remplacées par des valeurs probablement arbitraire.
+
+3 - Contrairement aux trois premiers pointeurs qui ont pour valeur l'adresse des entiers pointés, les références ont la même adresse et la même valeur que l'entier référencé.
+Par conséquent, modifier la référence revient à modifier la variable initiale.

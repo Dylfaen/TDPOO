@@ -1,0 +1,5 @@
+Comme vu précédement, #define copie1(source,dest) source=dest est une directive de préprocesseur qui va remplacer dans le fichier .cpp toutes les occurences de #define copie1(source,dest) par source=dest.
+Une fonction inline remplace l'appel à la fonction par son code en résolvant les paramètres. Contrairement à un #define qui va simplement remplacer le texte sans aucunes résolution des paramètres.
+L'utilisation des fonctions inline permet dans certains cas d'économiser des ressources (mémoire et temps de calcul).
+
+La copie n'est pas réalisé dans le cas de la fonction inline puisque source et dest sont passés par valeurs, donc valable uniquement à l'intérieure du bloc fonction copie2 et non au main.

@@ -1,0 +1,28 @@
+1 - Les prototypes sont donnés dans le main.cpp
+
+2 - Le compilateur choisi la fonction qui a les types de paramètres les plus compatibles avec les siens.
+Ici, il choisira la fonction qui prend des int en priorité. Si celle-ci n'existe pas, il choisira celle avec des float.
+Mais probabalement jamais celle avec des int[] car pas assez proche.
+Nous avons testé en supprimant la fonction avec des int :
+
+cesar@jarvis:~/Documents/school/Université/td/poo/td3/8-Thomas$ ./a.out
+float
+3
+float
+5.189
+tab
+9
+9
+9
+9
+9
+9
+9
+9
+9
+9
+float
+3
+
+3 -Il n'y a aucun problème à créer une fonction Somme() avec 3 parmètres de même types, possible pour les mêmes raisons qu'évoqués à la réponse 2.
+4- Il est possible de créer une fonction Somme() avec comme paramètres deux types différents, possible pour les mêmes raisons qu'évoqués à la réponse 2.
