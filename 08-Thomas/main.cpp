@@ -3,11 +3,11 @@
 using namespace std;
 
 
-// float Somme(float a, float b){
-//   cout << "float" << endl;
-//
-//   return a + b;
-// }
+float Somme(float a, float b){
+  cout << "float" << endl;
+
+  return a + b;
+}
 int Somme(int a, int b){
   cout << "int" << endl;
   return a + b;

@@ -53,7 +53,7 @@ void PileEntier::empile(int n) {
 /*
  * Supprime l'élément en haut de la pile et le retourne s'il existe. Retourne 0 si la pile était vide.
  * Remarque : si la valeur dépilée est 0, il est impossible de savoir on a bien dépilé ou si la pile était vide.
- * Amélioration : il faudrait passer un *int qui contiendra le code d'erreur.
+ * Amélioration : nous avons passé un *int qui contient le code d'erreur.
  */
 int PileEntier::depile(int *erreur) {
   if(vide()) {

@@ -4,4 +4,4 @@ L'utilisation des fonctions inline permet dans certains cas d'économiser des re
 
 La copie n'est pas réalisé dans le cas de la fonction inline puisque source et dest sont passés par valeurs, donc valable uniquement à l'intérieure du bloc fonction copie2 et non au main.
 
-En ce qui concerne les l'utilisation de la récursivité, elle fonctionne avec inline car le remplacement est typé. 
+En ce qui concerne les l'utilisation de la récursivité, elle fonctionne avec inline car le remplacement est typé.
