@@ -1,0 +1,12 @@
+1-
+Les constructeurs sont implémentés dans la classes car aucun fichier header n'est déclaré.
+Les différences avec des constructeurs implémentés à l'extérieur de la classe (header) sont par exemple le temps de compilation.
+En effet le compilateur devra lire entièrement l'implémentation alors qu'il pourrait ne lire que l'interface, de plus à chaque fois que le fichier sera inclus, l'implémentation sera compilé. Ceci peut-être évité en déclarant l'implémentation dans un fichier séparé. Ainsi seule l'interface sera compilé à chaque inclusion.
+
+2 -
+On peut déclarer la fonction dans le fichier où sont déclarées les classes vecteur et matrice, mais il faut impérativement que produit soit déclaré après matrice afin que le compilateur ait déjà connaissance de cette dernière.
+Afin que produit puisse accèder aux données membres des objets mat et vect on doit définir des accesseurs en lecture (method get) sur ces objets.
+Il est a noter que si les classes Matrice et Vecteur sont implémentées dans des fichiers distincts, il est possible de définir produit comme une fonction amie des deux classes, et donc se passer des accesseurs.
+
+3-
+On peut définir Matrice comme une classe amie de Vecteur, elle pourra donc accéder aux données membres de Vecteur.
