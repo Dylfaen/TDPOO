@@ -3,3 +3,5 @@ Une fonction inline remplace l'appel à la fonction par son code en résolvant l
 L'utilisation des fonctions inline permet dans certains cas d'économiser des ressources (mémoire et temps de calcul).
 
 La copie n'est pas réalisé dans le cas de la fonction inline puisque source et dest sont passés par valeurs, donc valable uniquement à l'intérieure du bloc fonction copie2 et non au main.
+
+En ce qui concerne les l'utilisation de la récursivité, elle fonctionne avec inline car le remplacement est typé. 

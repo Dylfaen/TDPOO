@@ -24,8 +24,7 @@ public:
   //Méthode qui permet la réalisation de l'oeuvre (également utile pour le débuggage).
   void peindre() const;
 
+  //Destructeur
   ~Personne();
-
-
 };
 #endif
