@@ -37,6 +37,7 @@ void Personne::init(char *nom, char *prenom, int age) {
 
 Personne::~Personne(){
   cout << "destruction de " << this->prenom << " " << this->nom << endl;
+  //Ici on utilise des delete car on a créer des objets à l'aide de new
   delete [] this->nom;
   delete [] this->prenom;
 }

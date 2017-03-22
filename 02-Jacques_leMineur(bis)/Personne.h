@@ -6,8 +6,6 @@
 //Être humain, sans distinction de sexe
 class Personne
 {
-
-
 private:
   char* nom;
   char* prenom;

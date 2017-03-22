@@ -12,7 +12,7 @@ int main() {
 
   cout << "--------" << endl;
 
-  /*int* tab[10];
+  int* tab[10];
 
   for(int i = 0; i < 10; i++) {
     tab[i] = new int(i+1);
@@ -30,7 +30,6 @@ int main() {
   for(int i = 0; i < 10; i++) {
     cout << tab[i] << " : " << *tab[i] << endl;
   }
-*/
 
   int i = 2;
   int& s = i;
